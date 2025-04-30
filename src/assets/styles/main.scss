@@ -5,9 +5,9 @@
 /*-------------------------------------*/
 
 //Primary Colors
-$primary: rgba(125, 187, 187, 1);
-$secondary: rgba(23, 29, 30, 0.8);
-$highlight-hover: rgba(255, 255, 255, 0.3);
+$primary: rgb(131, 131, 131);
+$secondary: rgba(9, 12, 12, 0.8);
+$highlight-hover: rgba(223, 223, 223, 0.3);
 $highlight-active: rgba(255, 255, 255, 0.1);
 
 //Primary Text
@@ -45,6 +45,7 @@ $text-markdown-h2: rgba(255, 255, 255, 0.87);
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -54,9 +55,11 @@ $text-markdown-h2: rgba(255, 255, 255, 0.87);
   0% {
     transform: translateX(-5000%) skew(-0.785398rad);
   }
+
   90% {
     transform: translateX(-25%) skew(-0.785398rad);
   }
+
   100% {
     transform: translateX(0) skew(-0.785398rad);
   }
@@ -66,16 +69,20 @@ $text-markdown-h2: rgba(255, 255, 255, 0.87);
   0% {
     opacity: 0;
   }
+
   10% {
     opacity: 0.2;
   }
+
   15%,
   40% {
     opacity: 0.05;
   }
+
   30% {
     opacity: 0.4;
   }
+
   100% {
     opacity: 1;
   }
@@ -96,7 +103,7 @@ body {
 }
 
 header {
-  animation: 1s ease-out 1 slideInFromLeft;
+  animation: 0.2s ease-out 1 slideInFromLeft;
   background-color: $secondary;
   border-color: $secondary;
   height: 96px;
@@ -106,16 +113,17 @@ header {
 
 .title {
   transform: translateX(-100%);
-  animation: 1s ease-out 1 slideInFromLeft;
-  animation-delay: 0.5s;
+  animation: 0.2s ease-out 1 slideInFromLeft;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
   background-color: $primary;
   border-color: $primary;
-  width: 700px;
+  width: 800px;
   height: 100%;
   display: inline-flex;
   align-items: center;
   column-gap: 1em;
+
   .title-container {
     display: flex;
     flex-direction: column;
@@ -180,8 +188,8 @@ header {
 .rhombus {
   z-index: -1;
   transform: translateX(-5000%) skew(-0.785398rad);
-  animation: 0.75s ease-out 1 slideInFromLeftRhombus;
-  animation-delay: 1s;
+  animation: 0.25s ease-out 1 slideInFromLeftRhombus;
+  animation-delay: 0.1s;
   animation-fill-mode: forwards;
   background-color: $primary;
   border-color: $primary;
@@ -221,8 +229,8 @@ div .location-info {
 
 header video,
 div.location-info {
-  animation: 0.5s ease 1 flickerIn;
-  animation-delay: 2s;
+  animation: 0.25s ease 1 flickerIn;
+  animation-delay: 0.2s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -230,6 +238,7 @@ div.location-info {
 .location-row {
   height: 40px;
   display: flex;
+
   h4 {
     margin: 0px;
     line-height: 1.5em;
@@ -239,6 +248,7 @@ div.location-info {
     text-transform: uppercase;
     letter-spacing: 3px;
   }
+
   .subtitle {
     font-size: 18px;
     margin: 0%;
@@ -248,9 +258,11 @@ div.location-info {
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
+
   div {
     padding: 0px 15px;
   }
+
   #planet {
     width: 315px;
   }
@@ -276,17 +288,17 @@ div.location-info {
 #events,
 #pilots {
   animation: 0.5s ease 1 flickerIn;
-  animation-delay: 2.2s;
+  animation-delay: 0.25s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 
 #events {
-  animation-delay: 2.5s;
+  animation-delay: 0.25s;
 }
 
 #pilots {
-  animation-delay: 2.8s;
+  animation-delay: 0.25s;
 }
 
 div .content-container {
@@ -297,7 +309,7 @@ div .content-container {
 section.section-container {
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  margin: 25px;
 }
 
 section .section-header {
@@ -326,7 +338,7 @@ section .section-header {
 }
 
 .section-content-container {
-  height: 666px;
+  height: 736px;
   background: $secondary;
   border: 1px solid $primary;
   margin-top: -1px;
@@ -347,18 +359,23 @@ section .section-header {
   }
 
   ::-webkit-scrollbar {
-    width: 12px; /* width of the entire scrollbar */
+    width: 12px;
+    /* width of the entire scrollbar */
   }
 
   ::-webkit-scrollbar-track {
-    background: none; /* color of the tracking area */
+    background: none;
+    /* color of the tracking area */
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: $primary; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
+    background-color: $primary;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
     border: 3px solid $secondary;
-    margin: 3px; /* creates padding around scroll thumb */
+    margin: 3px;
+    /* creates padding around scroll thumb */
   }
 }
 
@@ -408,6 +425,7 @@ section .section-header {
   .name {
     flex-grow: 8;
   }
+
   h1 {
     margin: 0px;
     margin-bottom: 0.25em;
@@ -449,6 +467,7 @@ section .section-header {
     filter: url(#round);
     clip-path: polygon(0 0, 45px 100%, 100% 100%, 100% 0%);
     -webkit-clip-path: polygon(0 0, 45px 100%, 100% 100%, 100% 0%);
+
     img {
       width: 24px;
       height: 24px;
@@ -484,7 +503,8 @@ section .section-header {
 
 .pilot-list-container {
   height: 666px;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 #pilots .pilot {
@@ -492,20 +512,20 @@ section .section-header {
   flex-direction: row;
   padding: 1em;
   column-gap: 1em;
-  height: 136px;
+  height: 200px;
   border-bottom: none;
   z-index: 1;
   cursor: pointer;
 
   .pilot-loadout {
-    width: 250px;
+    width: 220px;
     display: flex;
     flex-direction: column;
     row-gap: 0px;
   }
 
   .mech-loadout {
-    width: 250px;
+    width: 220px;
     display: flex;
     flex-direction: column;
     row-gap: 0px;
@@ -513,14 +533,14 @@ section .section-header {
   }
 
   .pilot-portrait {
-    width: 104px;
-    height: 136px;
+    width: 128px;
+    height: 170px;
     object-fit: cover;
   }
 
   .mech-portrait {
-    width: 104px;
-    height: 136px;
+    width: 128px;
+    height: 170px;
     object-fit: cover;
   }
 
@@ -566,13 +586,13 @@ section .section-header {
   transition: 0.2s ease;
   position: absolute;
   text-align: center;
-  height: 136px;
+  height: 170px;
   background-color: $highlight-hover;
   display: flex;
   align-items: center;
   margin-bottom: 1em;
   width: 0px;
-  margin-top: -153px;
+  margin-top: -215px;
   margin-left: 1em;
   z-index: -1;
 
@@ -592,7 +612,7 @@ section .section-header {
 }
 
 .pilot-wrapper:hover .middle {
-  width: 757px;
+  width: 800px;
 }
 
 .pilot-wrapper:active .middle,
@@ -601,7 +621,7 @@ section .section-header {
   transition: 0.5s ease;
 }
 
-.o-modal > div:nth-child(2) {
+.o-modal>div:nth-child(2) {
   position: absolute;
   left: 50px;
   top: 142px;
@@ -611,18 +631,23 @@ section .section-header {
 
 .pilot-modal {
   ::-webkit-scrollbar {
-    width: 12px; /* width of the entire scrollbar */
+    width: 12px;
+    /* width of the entire scrollbar */
   }
 
   ::-webkit-scrollbar-track {
-    background: none; /* color of the tracking area */
+    background: none;
+    /* color of the tracking area */
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: $primary; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
+    background-color: $primary;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
     border: 3px solid $secondary;
-    margin: 3px; /* creates padding around scroll thumb */
+    margin: 3px;
+    /* creates padding around scroll thumb */
   }
 
   .pilot-header-container {
@@ -637,6 +662,7 @@ section .section-header {
     gap: 15px;
     padding-left: 16px;
     margin-top: -38px !important;
+
     h1 {
       font-size: 26px;
       margin: 0%;
@@ -727,6 +753,7 @@ footer {
   opacity: 0.1;
   color: $text-location;
   transition: 2s ease-in-out;
+
   p {
     font-family: "Inconsolata", monospace;
     font-weight: 400;
@@ -735,6 +762,7 @@ footer {
     color: $text-pilot-code;
     flex-grow: 2;
   }
+
   a {
     font-family: "Inconsolata", monospace;
     font-weight: 400;
@@ -806,7 +834,7 @@ div.markdown {
     list-style-image: url("../bullet.png");
   }
 
-  ol{
+  ol {
     display: block;
     margin-block-start: 0.25em;
     margin-block-end: 0.25em;
@@ -814,8 +842,9 @@ div.markdown {
     margin-inline-end: 0px;
     padding-inline-start: 20px;
     margin-bottom: 1em;
-    li{
-      margin-bottom:0.5em;
+
+    li {
+      margin-bottom: 0.5em;
     }
   }
 }
