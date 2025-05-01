@@ -264,7 +264,7 @@ div.location-info {
   }
 
   #planet {
-    width: 315px;
+    width: 275px;
   }
 
   #year {
@@ -390,6 +390,12 @@ section .section-header {
 }
 
 .clipped-medium-backward-pilot {
+  width: 452px;
+  clip-path: polygon(0 0, 400px 0, 452px 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 400px 0, 452px 100%, 0% 100%);
+}
+
+.clipped-medium-backward-map {
   width: 452px;
   clip-path: polygon(0 0, 400px 0, 452px 100%, 0% 100%);
   -webkit-clip-path: polygon(0 0, 400px 0, 452px 100%, 0% 100%);
@@ -737,6 +743,93 @@ section .section-header {
   }
 }
 
+
+.map-modal {
+  position: absolute;
+  left: 180px;
+  top: -50px;
+
+  .map-header-container {
+    display: flex;
+  }
+
+  div .section-header {
+    background-color: $primary;
+    border-color: $primary;
+    height: 52px;
+    display: inline-flex;
+    gap: 15px;
+    padding-left: 16px;
+    margin-top: -38px !important;
+
+    h1 {
+      font-size: 26px;
+      margin: 0%;
+      align-self: center;
+      font-family: "Big Shoulders Display", cursive;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .rhombus-back {
+    transform: skew(0.785398rad) !important;
+    background-color: $primary;
+    border-color: $primary;
+    width: 40px;
+    height: 52px;
+    display: inline-block;
+    position: relative;
+    left: -25px;
+    top: -38px;
+  }
+
+  div.map {
+    background-color: $secondary;
+    border: 1px solid $primary;
+    margin-top: -38px;
+    width: 1400px;
+  }
+}
+
+.map-modal.map {
+  .map {
+    width: 1400px;
+  }
+
+  img.map {
+    width: 1400px;
+    object-fit: cover;
+  }
+
+  .map-header-container {
+    display: flex;
+  }
+
+  div .section-header {
+    background-color: $primary;
+    border-color: $primary;
+    height: 52px;
+    display: inline-flex;
+    gap: 15px;
+    padding-left: 16px;
+    margin-top: -38px !important;
+  }
+
+  .rhombus-back {
+    transform: skew(0.785398rad) !important;
+    background-color: $primary;
+    border-color: $primary;
+    width: 40px;
+    height: 52px;
+    display: inline-block;
+    position: relative;
+    left: -25px;
+    top: -38px;
+  }
+}
+
 .o-modal__overlay {
   bottom: 0;
   left: 0;
@@ -794,9 +887,9 @@ div.markdown {
   overflow-y: auto;
   transition: height 0.5s ease-in-out;
 
-  p strong {
-    color: $primary;
-  }
+  // p strong {
+  //   color: $primary;
+  // }
 
   h1 {
     margin: 0px;
@@ -850,7 +943,7 @@ div.markdown {
 }
 
 #missions .markdown {
-  height: 350px;
+  height: 400px;
 }
 
 #events .markdown {

@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="rhombus">&nbsp;</div>
-    <video autoplay muted loop width="90px" height="90px">
+    <video autoplay muted loop width="90px" height="90px" @click="mapModal">
       <source src="/planet.webm" type="video/webm" />
     </video>
     <div class="location-info">
@@ -23,9 +23,13 @@
           <h4>Deployment Info</h4>
           <span class="subtitle">{{ header.planet }}</span>
         </div>
-        <div id="year">
-          <h4>Year</h4>
-          <span class="subtitle">{{ header.year }}</span>
+        <div id="date">
+          <h4>Date</h4>
+          <span class="subtitle">{{ header.date }}</span>
+        </div>
+        <div id="time">
+          <h4>Time</h4>
+          <span class="subtitle">{{ header.time }}</span>
         </div>
       </div>
       <div class="location-row" id="system-gate-ring">
@@ -48,15 +52,30 @@
 
 <script>
 
+import MapModal from '../MapModal.vue';
 
 export default {
-  components: {
-  },
+	components: {
+		MapModal
+	},
   props: {
     header: {
       type: Object,
       required: true,
-    }
+    },
+  },
+  methods: {
+    mapModal() {
+      this.$oruga.modal.open({
+        parent: this,
+        component: MapModal,
+        custom: true,
+        trapFocus: true,
+        props: {},
+        class: "TEST",
+        width: 1920,
+      });
+    },
   }
 }
 </script>

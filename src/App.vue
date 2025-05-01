@@ -83,6 +83,11 @@ export default {
           "name": "Diplomatic Support",
           "status": "start"
         },
+        // {
+        //   "slug": "002",
+        //   "name": "Solstice Rain",
+        //   "status": "start"
+        // },
       ],
       "pilots": [
         {
@@ -112,7 +117,8 @@ export default {
       ],
       "header": {
         "planet": "Cressidium",
-        "year": "5016u",
+        "date": "7.29.5016u",
+        "time": "0600",
         "system": "Delta Arillian",
         "gate": "Cascade-Adams",
         "ring": "Cascade-Line",
