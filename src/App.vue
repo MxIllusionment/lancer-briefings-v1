@@ -90,30 +90,30 @@ export default {
         // },
       ],
       "pilots": [
-        {
-          "callsign": "Rachel",
-          "alias": "<RACHEL>",
-          "code": "462370be-bd0f-41c2-b667-cc75f3a59a96///UNS-RIO-GRANDE-M1//377308ad-ba23-410b-ae37-68a1fb5f8db4",
-          "corpro": "GMS",
-          "frame": "Everest",
-          "mech": "Type - Worst Beat"
-        },
-        {
-          "callsign": "Kimberly",
-          "alias": "<KIMBERLY>",
-          "code": "7cd700cc-c990-48ed-892f-e5468de724c4///UNS-RIO-GRANDE-M1//a98c3e28-ad4a-4f89-bcd9-501464e960da",
-          "corpro": "GMS",
-          "frame": "Everest",
-          "mech": "Scarlet Judicator"
-        },
-        {
-          "callsign": "Daniel",
-          "alias": "<DANIEL>",
+      {
+          "callsign": "Shrike",
+          "alias": "Shen Torral",
           "code": "4be26ce9-923b-4069-b6c9-76437d4be455///UNS-RIO-GRANDE-M1//056940c6-8d55-4190-8e85-57caa043cb1a",
           "corpro": "GMS",
           "frame": "Everest",
-          "mech": "Necrophile"
+          "mech": "Songbird"
         },
+        {
+          "callsign": "Mr. Right",
+          "alias": "Tom Right",
+          "code": "462370be-bd0f-41c2-b667-cc75f3a59a96///UNS-RIO-GRANDE-M1//377308ad-ba23-410b-ae37-68a1fb5f8db4",
+          "corpro": "GMS",
+          "frame": "Everest",
+          "mech": "Irresistible Object"
+        },
+        {
+          "callsign": "Nexus",
+          "alias": "Nexus",
+          "code": "7cd700cc-c990-48ed-892f-e5468de724c4///UNS-RIO-GRANDE-M1//a98c3e28-ad4a-4f89-bcd9-501464e960da",
+          "corpro": "GMS",
+          "frame": "Everest",
+          "mech": "The Doorway is Open"
+        }
       ],
       "header": {
         "planet": "Cressidium",
