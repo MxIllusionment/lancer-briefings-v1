@@ -20,7 +20,8 @@
 			<div class="rhombus-back">&nbsp;</div>
 		</div>
 		<div class="pilot">
-			<img :src="portrait" class="portrait" />
+			  <img :src="portrait" class="portrait" />
+				<div class="horus"><Markdown :source="horus" html=true class="markdown" /></div>
 		</div>
 	</div>
 </template>
@@ -35,6 +36,7 @@ export default {
 	data() {
 		return {
 			bio: "",
+			horus: "",
 		}
 	},
 	props: {
@@ -57,6 +59,16 @@ export default {
 			self.bio = client.responseText;
 		}
 		client.send();
+
+		if (this.pilot.callsign == `Nexus`) {
+				let horus = `/pilots/${this.pilot.callsign}.horus.md`
+				var horusClient = new XMLHttpRequest();
+				horusClient.open('GET', horus);
+				horusClient.onreadystatechange = function () {
+					self.horus = horusClient.responseText;
+				}
+				horusClient.send();
+			}
 	},
 	methods: {
 

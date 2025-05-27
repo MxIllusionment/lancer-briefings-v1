@@ -2,8 +2,6 @@ Nexus grew up on the Union world of Lucet, a planet devoted to "scholarship, cra
 
 She loves piloting itself more than she's interested in the political reasons for deployment, though she'd argue (and possibly go so far as insubordination or desertion) if she believed that the fight was truly unjust. She's a hard worker and never complains about drills or maintenance, but she's not great with people. She was nearly expelled from her high school for her role in a fistfight in which another student was hospitalized. (She didn't start the fight, but she did finish it).
 
-`Are you there, HT? Are you here? Where is here? Are you there?`
-
 ## Random Facts:
 
 - When she's not working, she prefers to be dancing or playing contact sports.
