@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+html, body, div, a, i, button, select, option, optgroup, hr, br {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
 /*-------------------------------------*/
 /*--       Theme Customization       --*/
 /*-------------------------------------*/
@@ -275,20 +285,21 @@ div.location-info {
     margin: 0px;
     line-height: 1.5em;
     font-family: "Raleway", sans-serif;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 3px;
   }
 
   .subtitle {
-    font-size: 18px;
+    font-size: 21px;
     margin: 0%;
     align-self: center;
     font-family: "Big Shoulders Display", cursive;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    line-height: 0.9em;
   }
 
   div {
@@ -413,7 +424,7 @@ section .section-header {
 
 .mission-list-container {
   height: 180px;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .clipped-medium-backward {
@@ -587,7 +598,7 @@ section .section-header {
     margin-bottom: 0.25em;
     line-height: 1.5em;
     font-family: "Raleway", sans-serif;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -595,7 +606,7 @@ section .section-header {
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 21px;
     margin: 0%;
     margin-bottom: 0.25em;
     align-self: center;
@@ -610,7 +621,7 @@ section .section-header {
     font-family: "Inconsolata", monospace;
     font-weight: 400;
     line-height: 1.25em;
-    font-size: 11px;
+    font-size: 13px;
     color: $text-pilot-code;
     flex-grow: 2;
   }
@@ -894,7 +905,7 @@ footer {
   p {
     font-family: "Inconsolata", monospace;
     font-weight: 400;
-    line-height: 1.25em;
+    line-height: 1.1em;
     font-size: 11px;
     color: $text-pilot-code;
     flex-grow: 2;
@@ -903,7 +914,7 @@ footer {
   a {
     font-family: "Inconsolata", monospace;
     font-weight: 400;
-    line-height: 1.25em;
+    line-height: 1.1em;
     font-size: 11px;
     color: $text-pilot-code;
     flex-grow: 2;
@@ -921,23 +932,23 @@ footer:hover {
 div.markdown {
   padding-left: 1em;
   padding-right: 1em;
-  font-size: 16px;
+  font-size: 22px;
   margin: 0%;
   font-family: "Titillium Web", cursive;
   font-weight: 400;
   color: $text-markdown-p;
   height: 350px;
-  overflow-y: auto;
+  overflow-y: hidden;
   transition: height 0.5s ease-in-out;
 
-  // p strong {
-  //   color: $primary;
-  // }
+  p {
+    line-height: 1.25em;
+  }
 
   h1 {
     margin: 0px;
     margin-bottom: 0.25em;
-    line-height: 1.5em;
+    line-height: 1em;
     font-family: "Raleway", sans-serif;
     font-size: 10px;
     font-weight: 800;
@@ -968,6 +979,7 @@ div.markdown {
     padding-inline-start: 20px;
     margin-bottom: 1em;
     list-style-image: url("../bullet.png");
+    line-height: 1.25;
   }
 
   ol {
