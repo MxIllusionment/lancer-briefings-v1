@@ -1,7 +1,11 @@
-A few sentences about Daniel's character
+Shen grew up on ::redacted::. ::redacted::
+
+::redacted::
+
+Showing natural leadership capability, they have been assigned as the squad leader for the team's inaugural mission.
 
 ## Random Facts:
 
-- Trivia #1
-- Trivia #2
-- Trivia #3
+- ::redacted::
+- ::redacted::
+- All redacted? WTF, dude? You know we'll find out some day.
