@@ -81,13 +81,13 @@ export default {
         {
           "slug": "001",
           "name": "Diplomatic Support",
-          "status": "start"
+          "status": "failure"
         },
-        // {
-        //   "slug": "002",
-        //   "name": "Solstice Rain",
-        //   "status": "start"
-        // },
+         {
+           "slug": "002",
+           "name": "Solstice Rain",
+           "status": "start"
+         },
       ],
       "pilots": [
       {
@@ -118,7 +118,7 @@ export default {
       "header": {
         "planet": "Cressidium",
         "date": "7.29.5016u",
-        "time": "0600",
+        "time": "0700",
         "system": "Delta Arillian",
         "gate": "Cascade-Adams",
         "ring": "Cascade-Line",
