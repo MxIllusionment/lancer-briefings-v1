@@ -117,7 +117,7 @@ export default {
       "header": {
         "planet": "Cressidium",
         "date": "7.29.5016u",
-        "time": "0700",
+        "time": "1000",
         "system": "Delta Arillian",
         "gate": "Cascade-Adams",
         "ring": "Cascade-Line",
