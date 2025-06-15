@@ -1,7 +1,7 @@
 <template>
   <Header :header="this.header" />
   <div class="content-container">
-    <section class="section-container" id="missions" style="width:500px; height:1000px;">
+    <section class="section-container" id="missions" style="width:600px; height:1080px;">
       <div class="section-header clipped-medium-backward">
         <img src="/icons/mission-icon.svg" />
         <h1>Mission Log</h1>
@@ -16,7 +16,7 @@
         </div>
       </div>
     </section>
-    <section class="section-container" id="events" style="width:600px; height:1000px;">
+    <section class="section-container" id="events" style="width:600px; height:1080px;">
       <div class="section-header clipped-medium-backward">
         <img src="/icons/events-icon.svg" />
         <h1>Events Log</h1>
@@ -25,7 +25,7 @@
         <Markdown :source="events" class="markdown" />
       </div>
     </section>
-    <section class="section-container" id="pilots" style="width:900px; height:1000px;">
+    <section class="section-container" id="pilots" style="width:900px; height:1080px;">
       <div style="height:52px; overflow:hidden;">
         <div class="section-header clipped-medium-backward-pilot">
           <img src="/icons/pilot-icon.svg" />
@@ -53,7 +53,6 @@
   <audio autoplay>
     <source src="/startup.ogg" type="audio/ogg" />
   </audio>
-  <Footer />
 </template>
 
 <script>
@@ -74,7 +73,7 @@ export default {
 
   data () {
     return {
-      "mission_slug": "001",
+      "mission_slug": "002",
       "current_md": "",
       "events": "",
       "missions": [
@@ -187,7 +186,7 @@ export default {
 <style lang="scss">
 #app {
   width: 1902px;
-  height: 910px;
+  height: 1080px;
   overflow: hidden;
 }
 </style>
