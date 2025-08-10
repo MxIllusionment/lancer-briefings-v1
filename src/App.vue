@@ -22,7 +22,7 @@
         <h1>Events Log</h1>
       </div>
       <div class="section-content-container">
-        <Markdown :source="events" class="markdown" />
+        <Markdown :source="events" class="markdown scrollable" />
       </div>
     </section>
     <section class="section-container" id="pilots" style="width:900px; height:1080px;">
@@ -116,8 +116,8 @@ export default {
       ],
       "header": {
         "planet": "Cressidium",
-        "date": "7.29.5016u",
-        "time": "1000",
+        "date": "7.30.5016u",
+        "time": "0000",
         "system": "Delta Arillian",
         "gate": "Cascade-Adams",
         "ring": "Cascade-Line",
