@@ -29,7 +29,7 @@ export default {
 	computed: {
 		mapimage() {
             let location = "Nov Elysia"
-            let state = "+5"
+            let state = "+4+5+6"
 			return `/maps/${location}${state}.png`
 		},
 	},
